@@ -18,9 +18,9 @@ int main()
    int k;
    cin>>k;
      k=k%n;
-  reverse(arr.begin(),arr.end()-k);
-  reverse(arr.end()-k,arr.end());
-  reverse(arr.begin(),arr.end());
+reverse(arr.begin(), arr.begin() + k);
+reverse(arr.begin() + k, arr.end());
+reverse(arr.begin(), arr.end());
 
    //print new array
    cout<<"New array: ";
